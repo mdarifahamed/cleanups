@@ -4,7 +4,7 @@ import logo from '../assets/logo/logo.png';
 
 function Header() {
   return (
-    <div className="w-full bg-white shadow-sm">
+    <div className="fixed top-0 left-0 w-full bg-white shadow-sm z-50">
       <div className="container mx-auto px-5">
         <nav className="flex items-center text-black py-4">
           <div>
@@ -36,6 +36,7 @@ function Header() {
 }
 
 export default Header;
+
 
 
 
