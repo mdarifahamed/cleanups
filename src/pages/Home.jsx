@@ -5,8 +5,11 @@ import laptop from "../assets/home/chair1.png";
 import faceicons from "../assets/icons/face-icons.png";
 import burse from "../assets/home/bursse.png";
 import gulbus from "../assets/home/gublus.png";
+import latestone from "../assets/home/latest-pic1.png";
+import latesttwo from "../assets/home/latest-pic2.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Carousel from "../pages/carousel";
 
 function Home() {
   useEffect(() => {
@@ -24,21 +27,23 @@ function Home() {
             alt="cleanup"
           />
 
-          <div >
-            <div className="absolute top-[35%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-green-100 opacity-1 p-4 sm:p-6 rounded-2xl w-[90%] sm:w-[70%] lg:w-[45%] shadow-lg text-center" >
-            <p className="text-base sm:text-lg font-semibold">go-to Cleaners</p>
-            <p className="text-3xl sm:text-4xl lg:text-[55px] text-gray-500">
-              Expert <br />
-              <span className="italic">Cleaning</span>
-            </p>
-            <p className="text-sm mt-2">
-              Creating cleaner, healthier spaces so you can focus on what
-              matters most and relax on the weekends.
-            </p>
-            <button className="mt-4 px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
-              Explore
-            </button>
-          </div>
+          <div>
+            <div className="absolute top-[35%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-green-100 opacity-1 p-4 sm:p-6 rounded-2xl w-[90%] sm:w-[70%] lg:w-[45%] shadow-lg text-center">
+              <p className="text-base sm:text-lg font-semibold">
+                go-to Cleaners
+              </p>
+              <p className="text-3xl sm:text-4xl lg:text-[55px] text-gray-500">
+                Expert <br />
+                <span className="italic">Cleaning</span>
+              </p>
+              <p className="text-sm mt-2">
+                Creating cleaner, healthier spaces so you can focus on what
+                matters most and relax on the weekends.
+              </p>
+              <button className="mt-4 px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
+                Explore
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -131,17 +136,49 @@ function Home() {
         <div className="container px-4 grid grid-cols-2 gap-4 pt-12 ">
           <div className="px-14 py-8" data-aos="fade-right">
             <p className="uppercase">Efficient</p>
-            <p className="text-[45px] font-normal">Professional Cleaning <br /> For Every Occasion</p>
+            <p className="text-[45px] font-normal">
+              Professional Cleaning <br /> For Every Occasion
+            </p>
             <p>
               Whether you're maintaining a pristine workspace, or simply keeping
               your home in top shape, our services are designed to meet all you
               needs
             </p>
-            
           </div>
           <div>
-            <img className="w-[500px] h-[500px]" src={ gulbus} alt="gulbus"/>
+            <img className="w-[500px] h-[500px]" src={gulbus} alt="gulbus" />
           </div>
+        </div>
+      </div>
+
+      <div>
+        <Carousel />
+      </div>
+
+      <div className="container px-4 grid grid-cols-2 gap-7 mt-4">
+        <p className="pl-[90px] text-3xl font-normal">Latest Posts</p>
+
+        <div className="pl-[90px] text-lg font-extralight">
+          <p>Our recent articles</p>
+          <p>Simplify your tasks and maintaining the cleanliness.</p>
+        </div>
+      </div>
+
+      <div className="container px-7 grid grid-cols-2 gap-5 mt-5 mb-4">
+        <div className="px-12">
+          <img
+            className=" w-[100%] h-[400px] rounded-3xl mx-5"
+            src={latestone}
+            alt="latestone"
+          />
+        </div>
+
+        <div className="px-12">
+          <img
+            className=" w-[100%] h-[400px] rounded-3xl mx-5"
+            src={latesttwo}
+            alt="latesttwo"
+          />
         </div>
       </div>
     </>
