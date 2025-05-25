@@ -81,7 +81,7 @@ function Footer() {
         <div className=" mx-7 border-t border-black">
           <div className=" pt-2 px-4 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-20 text-center md:text-left">
             <p>© 2024 Cleaners. All Rights Reserved.</p>
-            <p className="font-semibold">Powered By Florist WebEX Pvt Ltd.</p>
+            <p className="font-semibold">Powered By Florist WebEx Pvt Ltd.</p>
           </div>
         </div>
       </div>

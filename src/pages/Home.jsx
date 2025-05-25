@@ -7,6 +7,7 @@ import burse from "../assets/home/bursse.png";
 import gulbus from "../assets/home/gublus.png";
 import latestone from "../assets/home/latest-pic1.png";
 import latesttwo from "../assets/home/latest-pic2.png";
+import spary from "../assets/home/Spray.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Carousel from "../pages/carousel";
@@ -18,7 +19,7 @@ function Home() {
 
   return (
     <>
-      <div className="container px-4 sm:px-8 lg:px-20 mt-6">
+      <div className="container px-4 sm:px-8 lg:px-20 pt-20">
         <div className="relative">
           <img
             className="w-full rounded-3xl"
@@ -29,9 +30,16 @@ function Home() {
 
           <div>
             <div className="absolute top-[35%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-green-100 opacity-1 p-4 sm:p-6 rounded-2xl w-[90%] sm:w-[70%] lg:w-[45%] shadow-lg text-center">
-              <p className="text-base sm:text-lg font-semibold">
-                go-to Cleaners
-              </p>
+              
+              <div className="flex gap-1 items-center justify-center pb-3">
+                <div>
+                  <img className="w-[30px] h-[30px]" src={spary} alt="spary" />
+                </div>
+                <p className="text-base sm:text-lg font-semibold">
+                  go-to Cleaners
+                </p>
+              </div>
+
               <p className="text-3xl sm:text-4xl lg:text-[55px] text-gray-500">
                 Expert <br />
                 <span className="italic">Cleaning</span>
