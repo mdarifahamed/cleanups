@@ -1,8 +1,13 @@
-import React, {  useEffect } from "react";
+import React, { useEffect } from "react";
 
 import spray from "../assets/home/Spray.png";
+import qualitytwo from "../assets/icons/quality-two.png";
+import homeiocns from "../assets/icons/homeicons.png";
+import qualityone from "../assets/icons/quality-icons.png";
+import award from "../assets/icons/award.png";
 import cleansimg from "../assets/about/img1.png";
 import CarouselAbout from "./carouselAbout";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -61,7 +66,7 @@ function About() {
         <CarouselAbout></CarouselAbout>
       </div>
 
-      <div className="container px-10  text-center grid grid-cols-3 gap-8" >
+      <div className="container px-10  text-center grid grid-cols-3 gap-8">
         <div className="px-10">
           <p className="text-[100px] font-normal">5K</p>
           <p className="text[16px] font-extralight">Customers</p>
@@ -73,6 +78,52 @@ function About() {
         <div className="px-10">
           <p className="text-[100px] font-normal">99%</p>
           <p className="text[16px] font-extralight">Satisfaction</p>
+        </div>
+      </div>
+
+      <div className="container grid grid-cols-3 gap-5 px-20 mt-5" >
+        <div className="bg-pink-300 h-[300px] rounded-3xl "  data-aos="zoom-out-up">
+          <div className="px-14 py-14">
+            <img
+              className="w-[60px] h-[60px] pb-3"
+              src={qualitytwo}
+              alt="qualitytwo"
+            />
+            <p className="text-[42px] uppercase font-normal">Quality</p>
+            <p>every space is spotless and well-maintained.</p>
+          </div>
+        </div>
+
+        <div className="bg-gray-200 h-[300px] rounded-3xl"  data-aos="zoom-out-up">
+          <div className="px-14 py-14">
+            <img
+              className="w-[50px] h-[70px] pb-4"
+              src={homeiocns}
+              alt="homeiocns"
+            />
+            <p className="text-[42px] uppercase font-normal">Refresh</p>
+            <p>every room feeling fresh and rejuvenated.</p>
+          </div>
+        </div>
+
+        <div className="bg-green-200 h-[300px] rounded-3xl"  data-aos="zoom-out-up">
+          <div className="px-14 py-14">
+            <img
+              className="w-[50px] h-[60px] pb-4"
+              src={qualityone}
+              alt="qualityone "
+            />
+            <p className="text-[42px] ">Sanitize</p>
+            <p>top-grade sanitization techniques.</p>
+          </div>
+        </div>
+
+        <div className="bg-sky-300 h-[300px] rounded-3xl"  data-aos="zoom-out-up">
+          <div className="px-14 py-14">
+            <img className="w-[60px] h-[70px] pb-4" src={award} alt="award" />
+            <p className="text-[42px]">Awards</p>
+            <p>accolades that highlight our service.</p>
+          </div>
         </div>
       </div>
     </>
