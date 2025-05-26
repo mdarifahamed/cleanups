@@ -1,5 +1,3 @@
-// Carousel.jsx
-
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -27,6 +25,7 @@ const Carousel = () => {
     },
   ];
 
+  // ✅ Define the settings object here
   const settings = {
     dots: true,
     infinite: true,
@@ -34,21 +33,7 @@ const Carousel = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
+    autoplaySpeed: 3000,
   };
 
   return (
@@ -62,7 +47,7 @@ const Carousel = () => {
               <img
                 src={item.img}
                 alt="testimonial face"
-                className="w-20 h-20  rounded-full object-cover mb-4"
+                className="w-20 h-20 rounded-full object-cover mb-4"
               />
               <p className="text-lg font-medium text-gray-800">{item.text}</p>
             </div>
@@ -76,3 +61,8 @@ const Carousel = () => {
 export default Carousel;
 
 
+
+// import cleanerOne from "../assets/about/clearner1.png";
+// import cleanerTwo from "../assets/about/cleaner2.png";
+// import cleanerThree from "../assets/about/cleaner3.png";
+// import cleanerFour from "../assets/about/cleaner4.png";

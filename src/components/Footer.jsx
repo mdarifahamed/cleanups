@@ -74,7 +74,7 @@ function Footer() {
             <p>Style Guide</p>
             <p>Instructions</p>
             <p>Licenses</p>
-            <p>Changelog</p>
+           
           </div>
         </div>
 
