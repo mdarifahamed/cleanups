@@ -2,6 +2,9 @@ import React from 'react'
 import faceicons from "../assets/icons/face-icons.png"
 import lasteone from "../assets/home/latest-pic1.png"
 import lastethree from "../assets/home/latest-pic3.png"
+import flowerspic from "../assets/home/folwers-pic.png"
+
+import lastedtwo  from "../assets/home/latest-pic2.png"
 
 function Blog() {
   return (
@@ -26,15 +29,28 @@ function Blog() {
         </div>
 
 
-        <div className='px-10 grid grid-cols-2 gap-4 mt-5'>
+        <div className='px-10 grid grid-cols-2 gap-5 mt-5'>
           <img className='w-[100%] h-[400px] rounded-3xl' src={lasteone} alt="lastetone" />
           <img className='w-[100%] h-[400px] rounded-3xl' src={lastethree} alt="lastetone" />
         </div>
 
-        <div>
-          <p>Guide to Keeping Your Home Spotless</p>
-          <p></p>
+        <div className='px-12 grid grid-cols-2 gap-5'>
+          <p className='text-[42px] font-normal'>Guide to Keeping Your Home Spotless</p>
+          <p className='text-[42px] font-normal'>Effective Daily Cleaning Routines</p>
         </div>
+
+        <div className='px-10 grid grid-cols-2 gap-4 mt-5'>
+          <img className='w-[100%] h-[400px] rounded-3xl' src={lastedtwo } alt="lastedtwo" />
+          <img className='w-[100%] h-[400px] rounded-3xl' src={flowerspic} alt="flowerspic" />
+
+        </div>
+
+         <div className='px-12 grid grid-cols-2 gap-5'>
+          <p className='text-[42px] font-normal'>Keep Your Office Clean For Productivity</p>
+          <p className='text-[42px] font-normal'>Tips for a Healthier Home</p>
+        </div>
+
+
 
 
       </div>
